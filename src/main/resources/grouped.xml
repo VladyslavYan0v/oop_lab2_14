@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><GroupedDances><Group type="народний"><ConcertNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" group="масовий" id="ID_01" music="жива музика" scene="актова зала" type="народний">
+        <Number>1</Number>
+        <Dancers>
+            <Dancer><Name>Танцівник 1</Name><Age>21</Age><Experience>5</Experience></Dancer>
+            <Dancer><Name>Танцівник 2</Name><Age>23</Age><Experience>7</Experience></Dancer>
+            <Dancer><Name>Танцівник 3</Name><Age>20</Age><Experience>4</Experience></Dancer>
+            <Dancer><Name>Танцівник 4</Name><Age>22</Age><Experience>6</Experience></Dancer>
+            <Dancer><Name>Танцівник 5</Name><Age>19</Age><Experience>3</Experience></Dancer>
+        </Dancers>
+    </ConcertNumber></Group><Group type="бальний"><ConcertNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" group="парний" id="ID_02" music="фонограма" scene="телестудія" type="бальний">
+        <Number>2</Number>
+        <Dancers>
+            <Dancer><Name>Танцівник 1</Name><Age>24</Age><Experience>8</Experience></Dancer>
+            <Dancer><Name>Танцівник 2</Name><Age>22</Age><Experience>7</Experience></Dancer>
+        </Dancers>
+    </ConcertNumber></Group><Group type="естрадний"><ConcertNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" group="масовий" id="ID_03" music="фонограма" scene="вулична сцена" type="естрадний">
+        <Number>3</Number>
+        <Dancers>
+            <Dancer><Name>Танцівник 1</Name><Age>18</Age><Experience>2</Experience></Dancer>
+            <Dancer><Name>Танцівник 2</Name><Age>19</Age><Experience>3</Experience></Dancer>
+            <Dancer><Name>Танцівник 3</Name><Age>20</Age><Experience>4</Experience></Dancer>
+        </Dancers>
+    </ConcertNumber></Group></GroupedDances>

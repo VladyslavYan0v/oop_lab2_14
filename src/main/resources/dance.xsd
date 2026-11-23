@@ -1,0 +1,51 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="бальний"/>
+            <xs:enumeration value="народний"/>
+            <xs:enumeration value="естрадний"/>
+            <xs:enumeration value="східний"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AgeRestriction">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="3"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="DancerType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Age" type="AgeRestriction"/>
+            <xs:element name="Experience" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ConcertNumberType">
+        <xs:sequence>
+            <xs:element name="Number" type="xs:integer"/>
+            <xs:element name="Dancers">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Dancer" type="DancerType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="type" type="TypeEnum" use="required"/>
+        <xs:attribute name="scene" type="xs:string" use="required"/>
+        <xs:attribute name="group" type="xs:string" use="required"/>
+        <xs:attribute name="music" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="Dance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ConcertNumber" type="ConcertNumberType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

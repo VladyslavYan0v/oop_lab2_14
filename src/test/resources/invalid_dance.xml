@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../main/resources/dance.xsd">
+    <ConcertNumber id="ERR_01" type="народний" group="сольний" music="жива музика">
+        <Number>1</Number>
+        <Dancers>
+            <Dancer>
+                <Name>Помилковий Танцівник</Name>
+                <Age>999</Age>
+                <Experience>5</Experience>
+            </Dancer>
+        </Dancers>
+    </ConcertNumber>
+</Dance>
